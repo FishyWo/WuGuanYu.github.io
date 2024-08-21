@@ -31,7 +31,7 @@
 
 <body class="bg-gray-900 text-gray-300 font-sans">
     <!-- Header -->
-    <div class="container my-16 py-10 w-full mx-auto">
+    <div class="container my-16 py-10 w-full mx-auto" id="header">
         <h1 class="text-4xl font-bold text-white text-center">Wu Guan Yu</h1>
         <h2 class="text-xl text-blue-400 mt-2 text-center">Web Developer | App Developer | Machine Learning/Ai</h2>
         <div class="relative w-4/5 max-w-full overflow-hidden rounded-lg shadow-lg mx-auto mt-6">
@@ -186,7 +186,6 @@
         function showSlide(index) {
             slideIndex = (index + totalSlides) % totalSlides;
             const offset = -slideIndex * (100 / totalSlides) + 0.1;
-            console.log(offset);
             document.getElementById('carousel').style.transform = `translateX(${offset}%)`;
         }
 
@@ -203,7 +202,9 @@
 
         document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll("section");
-            const navLinks = document.querySelectorAll(".nav-link");
+            const navLinks = document.querySelectorAll("nav li a");
+            const content = document.getElementById("content");
+            const Header = document.getElementById("header");
 
             showSlide(slideIndex);
 
@@ -212,7 +213,8 @@
 
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
-                    if (scrollY >= sectionTop - 60) {
+                    console.log(scrollY);
+                    if (scrollY >= sectionTop-60) {
                         current = section.getAttribute("id");
                     }
                 });
