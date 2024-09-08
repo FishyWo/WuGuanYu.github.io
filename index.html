@@ -66,12 +66,12 @@
 
             <!-- Social Links -->
             <footer class="flex space-x-4 my-16">
-                <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white">
+                <a href="https://github.com/FishyWo" target="_blank" class="text-gray-400 hover:text-white">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 0C5.373 0 0 5.373 0 12c0 5.302 3.438 9.8 8.205 11.387.6.112.793-.261.793-.58 0-.288-.01-1.053-.015-2.067-3.338.727-4.042-1.612-4.042-1.612-.546-1.387-1.333-1.757-1.333-1.757-1.089-.744.084-.729.084-.729 1.204.084 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.493.997.108-.775.419-1.305.762-1.606-2.665-.305-5.466-1.334-5.466-5.932 0-1.31.469-2.381 1.237-3.222-.124-.304-.536-1.528.117-3.184 0 0 1.01-.324 3.301 1.231a11.507 11.507 0 013.003-.404 11.496 11.496 0 013.003.404c2.292-1.555 3.301-1.231 3.301-1.231.654 1.656.242 2.88.118 3.184.77.841 1.237 1.912 1.237 3.222 0 4.609-2.803 5.624-5.475 5.92.43.371.814 1.102.814 2.222 0 1.606-.015 2.902-.015 3.295 0 .322.192.694.798.576C20.565 21.798 24 17.302 24 12 24 5.373 18.627 0 12 0z" />
                     </svg>
                 </a>
-                <a href="https://www.linkedin.com" target="_blank" class="text-gray-400 hover:text-white">
+                <a href="https://www.linkedin.com/in/guan-yu-wu-650126281/" target="_blank" class="text-gray-400 hover:text-white">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path d="M4.98 3.5C4.98 2.119 6.09 1 7.469 1c1.378 0 2.469 1.119 2.469 2.5s-1.091 2.5-2.469 2.5c-1.379 0-2.469-1.119-2.469-2.5zM1 23h5V7H1v16zM8 23h5v-8.441c0-1.967-.038-4.503-2.746-4.503-2.75 0-3.173 2.146-3.173 4.36V23h5zM18.5 7.513c-2.373 0-3.847 1.669-3.847 4.346V23h5v-8.644c0-2.677-1.473-4.344-3.846-4.344z" />
                     </svg>
@@ -86,7 +86,7 @@
                 <h2 class="text-3xl font-bold text-white mb-4">About Me</h2>
                 <p class="text-lg leading-relaxed text-gray-400">
                     Hi I am Wu Guan Yu. I have a passion for creating
-                    things that are both functional and aesthetically pleasing. I have built various websites and
+                    things and learning things hands on. I have built various websites and
                     applications. I have experience with a variety of programming languages and frameworks, including JavaScript, Python, React, Node.js, Laravel(Php).
                 </p>
             </section>
@@ -168,6 +168,23 @@
                     <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
                         <h3 class="text-3xl font-bold text-white">Turn Based Combat Game</h3>
                         <p class="mt-4 text-gray-400">A turned base combat game coded in Python with Tkinter library.</p>
+                        <div class="relative w-4/5 max-w-full overflow-hidden rounded-lg shadow-lg mx-auto mt-6">
+                            <div id="carousel-tkinter-game" class="flex transition-transform duration-500 ease-in-out space-x-8 h-200" style="width: 650%;">
+                                <div class="w-full ms-16 my-auto"><img src="public/image/merlin pic.png" alt="Merlin" class="w-full object-cover my-auto rounded-lg" style="height: 35rem;"></div>
+                                <div class="w-full m-auto"><img src="public/image/Hector pic.png" alt="Hector" class="w-full h-96 object-cover my-auto rounded-lg" style="height: 35rem;"></div>
+                                <div class="w-full m-auto"><img src="public/image/Malphog pic.png" alt="Malphog" class="w-full h-96 object-cover my-auto rounded-lg" style="height: 35rem;"></div>
+                                <div class="w-full m-auto"><img src="public/image/Althalos pic.png" alt="Athalos" class="w-full h-96 object-cover my-auto rounded-lg" style="height: 35rem;"></div>
+                                <div class="w-full m-auto"><img src="public/image/Merlin attack screen.png" alt="Merlin Fight Screen" class="w-full h-96 object-cover my-auto rounded-lg" style="height: 35rem;"></div>
+                                <div class="w-full m-auto"><img src="public/image/Althalos pic.png" alt="Althalos Fight Screen" class="w-full h-96 object-cover my-auto rounded-lg" style="height: 35rem;"></div>
+                                <div class="w-full m-auto"><img src="public/image/Mashing screen.png" alt="Mash Screen" class="w-full h-96 object-cover my-auto rounded-lg" style="height: 35rem;"></div>
+                            </div>
+                            <button id="prevBtn-tkinter-game" class="absolute top-1/2 transform -translate-y-1/2 left-0 bg-black bg-opacity-50 text-white p-2 rounded-full focus:outline-none">
+                                &#10094;
+                            </button>
+                            <button id="nextBtn-tkinter-game" class="absolute top-1/2 transform -translate-y-1/2 right-0 bg-black bg-opacity-50 text-white p-2 rounded-full focus:outline-none">
+                                &#10095;
+                            </button>
+                        </div>
                         <div class="mt-4 flex space-x-2">
                             <span class="bg-teal-400/20 text-teal-300 px-3 py-1 rounded-full text-sm">Python</span>
                             <span class="bg-teal-400/20 text-teal-300 px-3 py-1 rounded-full text-sm">Tkinter</span>
@@ -179,26 +196,46 @@
         </div>
     </div>
     <script>
-        let slideIndex = 3;
+        //Personal photo carousel
+        let slideIndexPhoto = 3;
         const slides = document.querySelectorAll('#carousel img');
         const totalSlides = slides.length;
 
-        function showSlide(index) {
-            slideIndex = (index + totalSlides) % totalSlides;
-            const offset = -slideIndex * (100 / totalSlides) + 0.1;
-            document.getElementById('carousel').style.transform = `translateX(${offset}%)`;
+        function showSlide(index, carousel_id, totalSlides, offset_val=0) {
+            slideIndexPhoto = (index + totalSlides) % totalSlides;
+            const offset = -slideIndexPhoto * (100 / totalSlides) + offset_val;
+            document.getElementById(carousel_id).style.transform = `translateX(${offset}%)`;
         }
 
         document.getElementById('prevBtn').addEventListener('click', () => {
-            showSlide(slideIndex - 1);
+            showSlide(slideIndexPhoto - 1, 'carousel', totalSlides, 0.1);
         });
 
         document.getElementById('nextBtn').addEventListener('click', () => {
-            showSlide(slideIndex + 1);
+            showSlide(slideIndexPhoto + 1, 'carousel', totalSlides, 0.1);
         });
 
         // Auto slide every 3 seconds
-        setInterval(() => showSlide(slideIndex + 1), 5000);
+        setInterval(() => showSlide(slideIndexPhoto + 1, 'carousel', totalSlides, 0.1), 5000);
+
+        //Tkinter carousel
+        let slideIndexTkinter = 0;
+        const tkinterSlides = document.querySelectorAll('#carousel-tkinter-game img');
+        const tkinterTotalSlides = slides.length;
+
+        function showSlideTkinter(index, carousel_id, totalSlides, offset_val=0) {
+            slideIndexTkinter = (index + totalSlides) % totalSlides;
+            const offset = -slideIndexTkinter * (100 / totalSlides) + offset_val;
+            document.getElementById(carousel_id).style.transform = `translateX(${offset}%)`;
+        }
+
+        document.getElementById('prevBtn-tkinter-game').addEventListener('click', () => {
+            showSlideTkinter(slideIndexTkinter - 1, 'carousel-tkinter-game', tkinterTotalSlides);
+        });
+
+        document.getElementById('nextBtn-tkinter-game').addEventListener('click', () => {
+            showSlideTkinter(slideIndexTkinter + 1, 'carousel-tkinter-game', tkinterTotalSlides);
+        });
 
         document.addEventListener("DOMContentLoaded", function () {
             const sections = document.querySelectorAll("section");
@@ -206,7 +243,8 @@
             const content = document.getElementById("content");
             const Header = document.getElementById("header");
 
-            showSlide(slideIndex);
+            showSlide(slideIndexPhoto, 'carousel', totalSlides, 0.1);
+            showSlideTkinter(slideIndexTkinter, 'carousel-tkinter-game', tkinterTotalSlides);
 
             window.addEventListener("scroll", () => {
                 let current = "";
